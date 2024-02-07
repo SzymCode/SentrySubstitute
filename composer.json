@@ -1,9 +1,22 @@
 {
-    "name": "onx/sentry-substitute",
+    "name": "szymcode/sentry-substitute",
+    "description": "Package intended to replace Sentry in daily work.",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "SzymCode",
             "email": "s.radomski19@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "10.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "szymcode\\sentry_substitute\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
