@@ -4,23 +4,27 @@ Package intended to replace Sentry in daily work. Handles errors in the web appl
 [Link to Packagist](https://packagist.org/packages/szymcode/sentry-substitute)
 
 
+<br>
+<details><summary> 🛠️ Installation </summary>
+<br>
+    
+• First make sure u have installed latest version of [Composer](https://getcomposer.org/).
 
-<details><summary> <h2>  🛠️ Installation  </summary>
-
-- First make sure u have installed latest version of [Composer](https://getcomposer.org/).
-
-- Install package in your Laravel project with Composer
+• Install package in your Laravel project with Composer
 
 ```
 composer require szymcode/sentry-substitute
 ```
+
+<br>
 </details>
 
 
 
-<details><summary> <h2>  ❓ Usage  </summary>
-
-- Enable capturing exceptions to report them to the error panel by making the following changes to the App/Exceptions/Handler.php file:
+<details><summary> ❓ Usage </summary>
+<br>
+    
+• Enable capturing exceptions to report them to the error panel by making the following changes to the App/Exceptions/Handler.php file:
 
 ```bash
 use szymcode\sentry_substitute\ErrorHandling;
@@ -32,7 +36,5 @@ public function register(): void
     });
 }  
 ```
-
-
 
 </details>
